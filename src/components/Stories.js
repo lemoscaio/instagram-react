@@ -44,7 +44,6 @@ let stories = [
 ]
 
 export default function Stories() {
-    console.log(stories)
     return (
         <section class="stories">
             <div class="stories__seta-frente botao">

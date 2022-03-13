@@ -43,7 +43,18 @@ let posts = [
         qtdCurtidas: "101.523",
         qtdComentarios: "999",
         comentarioUsuario: "lemoscaio",
-        comentarioConteudo: "Lindo do papai",
+        listaComentarios: [
+            {
+                hrefComentarioUsuario: "#",
+                comentarioUsuario: "lemoscaio",
+                comentarioConteudo: "Lindo do papai"
+            },
+            {
+                hrefComentarioUsuario: "#",
+                comentarioUsuario: "dandalob",
+                comentarioConteudo: "Lindo da mamãe"
+            }
+        ]
     },
     {
         nomeUsuario: "Mark",
@@ -56,20 +67,15 @@ let posts = [
         hrefCurtidas: "#",
         qtdCurtidas: "101.523",
         qtdComentarios: "999",
+        comentarioUsuario: "lemoscaio",
         listaComentarios: [
             {
+                hrefComentarioUsuario: "#",
                 comentarioUsuario: "lemoscaio",
                 comentarioConteudo: "Lindo do papai"
             },
             {
-                comentarioUsuario: "dandalob",
-                comentarioConteudo: "Lindo da mamãe"
-            },
-            {
-                comentarioUsuario: "dandalob",
-                comentarioConteudo: "Lindo da mamãe"
-            },
-            {
+                hrefComentarioUsuario: "#",
                 comentarioUsuario: "dandalob",
                 comentarioConteudo: "Lindo da mamãe"
             }
@@ -77,28 +83,13 @@ let posts = [
     }
 ]
 
-let { hrefUsuario, srcUsuario, nomeUsuario, srcConteudo, hrefCurtidoPor, srcCurtidoPor, curtidoPor, hrefCurtidas, qtdCurtidas, qtdComentarios, listaComentarios, comentarioUsuario, comentarioConteudo } = posts[0]
-
 export default function Posts() {
     return (
         // Timeline com posts
         <section class="posts">
             {posts.map((post) => {
                 return (
-                    <Post
-                        hrefUsuario={hrefUsuario}
-                        srcUsuario={srcUsuario}
-                        nomeUsuario={nomeUsuario}
-                        srcConteudo={srcConteudo}
-                        hrefCurtidoPor={hrefCurtidoPor}
-                        srcCurtidoPor={srcCurtidoPor}
-                        curtidoPor={curtidoPor}
-                        hrefCurtidas={hrefCurtidas}
-                        qtdCurtidas={qtdCurtidas}
-                        qtdComentarios={qtdComentarios}
-                        comentarioUsuario={comentarioUsuario}
-                        comentarioConteudo={comentarioConteudo}
-                    />
+                    <Post dataFromPosts={post} />
                 )
             })}
         </section >

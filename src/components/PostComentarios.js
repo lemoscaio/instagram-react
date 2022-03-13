@@ -1,19 +1,19 @@
 import PostComentario from "./PostComentario"
 
-export default function PostComentarios(props, { listaComentarios }) {
-    let { qtdComentarios } = props
+export default function PostComentarios(post) {
     return (
         <div class="post__secao-comentarios">
             <div class="post__comentarios comentarios">
                 <a href="#" class="link-perfil-1">
-                    <p><small>Ver todos os {qtdComentarios} comentários</small></p>
+                    <p><small>Ver todos os {post.dataFromPost.dataFromPosts.qtdComentarios} comentários</small></p>
                 </a>
-                {/* {listaComentarios.map(({ comentarioUsuario, comentarioConteudo }) => {
-                    <PostComentario comentarioUsuario={comentarioUsuario} comentarioConteudo={comentarioConteudo} />
-                })} */}
 
-                <PostComentario comentarioUsuario="lemos_caio" comentarioConteudo="Lindo do papai" />
-                {/* <PostComentario comentarioUsuario="dandalob" comentarioConteudo="Lindo da mamãe" /> */}
+                {post.dataFromPost.dataFromPosts.listaComentarios.map((comentario) => {
+                    return (<PostComentario
+                        hrefComentarioUsuario={comentario.hrefComentarioUsuario}
+                        comentarioUsuario={comentario.comentarioUsuario} comentarioConteudo={comentario.comentarioConteudo}
+                    />)
+                })}
 
             </div>
             <div class="post__comentarios__adicionar-comentario adicionar-comentario">

@@ -1,19 +1,19 @@
-export default function PostHeader(props) {
-    let { hrefUsuario, srcUsuario, nomeUsuario } = props
+export default function PostHeader(post) {
+
     return (
         <div class="post__header">
             <div class="post__header__usuario">
-                <a href={hrefUsuario} class="link-perfil-icone">
-                    <img class="post__header__usuario__icone-usuario" src={"conteudos/" + srcUsuario}
-                        alt={"Ícone: " + nomeUsuario} />
+                <a href={post.dataFromPost.dataFromPosts.hrefUsuario} class="link-perfil-icone">
+                    <img class="post__header__usuario__icone-usuario" src={"conteudos/" + post.dataFromPost.dataFromPosts.srcUsuario}
+                        alt={"Ícone: " + post.dataFromPost.dataFromPosts.nomeUsuario} />
                 </a>
-                <a href="#" class="link-perfil-1">
+                <a href={post.dataFromPost.dataFromPosts.hrefUsuario} class="link-perfil-1">
                     <p class="post__header__usuario__nome-usuario">
-                        {nomeUsuario}
+                        {post.dataFromPost.dataFromPosts.nomeUsuario}
                     </p>
                 </a>
             </div>
             <ion-icon class="botao" name="ellipsis-horizontal"></ion-icon>
-        </div>
+        </div >
     )
 }
