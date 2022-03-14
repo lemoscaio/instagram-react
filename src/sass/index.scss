@@ -199,6 +199,10 @@ main {
         display: flex;
         flex-direction: row;
 
+        &.middle{
+            @include hide-on-mobile()
+        }
+
         &__caixa-pesquisa {
             width: 215px;
             padding: 8px;

@@ -1,9 +1,9 @@
-export default function SideBar() {
+export default function Sidebar() {
     return (
         <div class="timeline__coluna-secundaria">
             <aside class="barra-lateral">
                 <div class="barra-lateral__usuario-principal usuario-principal">
-                    <a href="#" class="link-perfil-icone"><img src="conteudos/mark-icone.JPG" alt="Ícone do Usuário"
+                    <a href="#" class="link-perfil-icone"><img src="./conteudos/mark-icone.jpg" alt="Ícone do Usuário"
                         class="usuario-principal__icone-usuario" /></a>
                     <div class="usuario-principal__nome">
                         <a href="#" class="link-perfil-1">
