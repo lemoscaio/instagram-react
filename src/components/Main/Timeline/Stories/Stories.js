@@ -13,7 +13,7 @@ let stories = [
     },
     {
         link: "https://github.com/lemoscaio/projeto7-instagram-react",
-        image: "caio-icon.jpg",
+        image: "lemoscaio-icon.jpg",
         name: "lemos_caio"
     },
     {

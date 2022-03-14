@@ -2,9 +2,11 @@ import PostComment from "./PostComment"
 
 export default function PostComments({ dataFromPost: { commentsInfo } }) {
     return (
-        <div className="post__secao-comments">
+        <div className="post__comments-section">
             <div className="post__comments comments">
-                <a href="https://github.com/lemoscaio/projeto7-instagram-react" className="link-profile-1">
+                <a
+                    href={commentsInfo.hrefcommentUser}
+                    className="link-profile-1">
                     {commentsInfo.comments.length > 0 &&
                         <p><small>
                             Ver todos os {commentsInfo.amountComments} comentários
@@ -14,7 +16,8 @@ export default function PostComments({ dataFromPost: { commentsInfo } }) {
                 {commentsInfo.comments.map((comment) => {
                     return (<PostComment
                         hrefcommentUser={comment.hrefcommentUser}
-                        commentUser={comment.commentUser} commentContent={comment.commentContent}
+                        commentUser={comment.commentUser}
+                        commentContent={comment.commentContent}
                     />)
                 })}
 

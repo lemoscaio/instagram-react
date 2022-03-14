@@ -20,6 +20,7 @@ let posts = [
         },
         commentsInfo: {
             amountComments: 1.778,
+            hrefComments: "https://github.com/lemoscaio/projeto7-instagram-react",
             comments: [
                 {
                     hrefcommentUser: "https://github.com/lemoscaio/projeto7-instagram-react",
@@ -52,6 +53,7 @@ let posts = [
             amountLikes: 101.523,
         },
         commentsInfo: {
+            hrefComments: "https://github.com/lemoscaio/projeto7-instagram-react",
             amountComments: 0,
             comments: [
             ]
@@ -75,6 +77,7 @@ let posts = [
             amountLikes: 199.954,
         },
         commentsInfo: {
+            hrefComments: "https://github.com/lemoscaio/projeto7-instagram-react",
             amountComments: 0,
             comments: [
             ]
@@ -98,6 +101,7 @@ let posts = [
             amountLikes: 103.974,
         },
         commentsInfo: {
+            hrefComments: "https://github.com/lemoscaio/projeto7-instagram-react",
             amountComments: 0,
             comments: [
             ]
@@ -121,6 +125,7 @@ let posts = [
             amountLikes: 1.903,
         },
         commentsInfo: {
+            hrefComments: "https://github.com/lemoscaio/projeto7-instagram-react",
             amountComments: 0,
             comments: [
             ]

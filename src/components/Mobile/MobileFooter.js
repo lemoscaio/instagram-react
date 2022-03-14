@@ -1,5 +1,5 @@
 export default function MobileFooter() {
-    return (// Barra inferior 
+    return (// Footer
         <footer className="bottom-nav">
             <ion-icon className="bottom-nav__icons button" name="home"></ion-icon>
             <ion-icon className="bottom-nav__icons button" name="search-outline"></ion-icon>

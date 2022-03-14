@@ -2,7 +2,7 @@ export default function SidebarRecommendedUsers(recommendedUser) {
     return (
         <div className="recommended-users__set">
             <div className="recommended-users__set_recommended-user recommended-user">
-                <a href={recommendedUser.dataFromSidebar.hrefRecommendedUserIcon} className="link-profile-icone">
+                <a href={recommendedUser.dataFromSidebar.hrefRecommendedUserIcon} className="link-profile-icon">
                     <img src={"./images/icons/" + recommendedUser.dataFromSidebar.srcRecommendedUserIcon} alt="Ícone de Usuário"
                         className="recommended-user__user-icon" />
                 </a>

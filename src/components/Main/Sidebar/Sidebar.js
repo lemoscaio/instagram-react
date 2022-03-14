@@ -42,7 +42,7 @@ let recommendedUsers = [
 
 export default function Sidebar() {
     return (
-        <div className="timeline__coluna-secundaria">
+        <div className="timeline__secondary-column">
             <aside className="sidebar">
 
                 {<User dataFromSidebar={user} />}
@@ -75,7 +75,7 @@ export default function Sidebar() {
                         <li className="list-link"><a href="https://github.com/lemoscaio/projeto7-instagram-react">Hashtags</a></li>
                         <li className="list-link"><a href="https://github.com/lemoscaio/projeto7-instagram-react">Idiomas</a></li>
                     </ul>
-                    <p>© 2021 INSTAGRAM DO FACEBOOK</p>
+                    <p>© 2021 INSTAGRAM DO CAIO LEMOS</p>
                 </div>
             </aside>
         </div>

@@ -2,7 +2,7 @@ export default function User(user) {
     return (
 
         <div className="sidebar__main-user main-user">
-            <a href={user.dataFromSidebar.hrefUserImage} className="link-profile-icone"><img src={"./images/icons/" + user.dataFromSidebar.srcUserImage} alt="Ícone do Usuário"
+            <a href={user.dataFromSidebar.hrefUserImage} className="link-profile-icon"><img src={"./images/icons/" + user.dataFromSidebar.srcUserImage} alt="Ícone do Usuário"
                 className="main-user__user-icon" /></a>
             <div className="main-user__name">
                 <a href="https://github.com/lemoscaio/projeto7-instagram-react" className="link-profile-1">
