@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar/Sidebar"
 
 export default function Main() {
     return (
-        <main class="timeline">
+        <main className="timeline">
             <Timeline />
             <Sidebar />
         </main>

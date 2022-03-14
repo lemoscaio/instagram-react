@@ -1,113 +1,79 @@
+import SidebarRecommendedUsers from "./SidebarRecommendedUsers"
+import User from "./User.js"
+
+let user = {
+    userIdName: "markito2021",
+    userRealName: "Mark Lemos",
+    srcUserImage: "mark-icon.jpg"
+}
+
+let recommendedUsers = [
+    {
+        hrefRecommendedUserIcon: "https://github.com/lemoscaio/projeto7-instagram-react",
+        srcRecommendedUserIcon: "recommended-user-1.jpg",
+        recommendedUserName: "loki",
+        recommendedUsertatus: "Segue você"
+    },
+    {
+        hrefRecommendedUserIcon: "https://github.com/lemoscaio/projeto7-instagram-react",
+        srcRecommendedUserIcon: "recommended-user-2.jpg",
+        recommendedUserName: "pipoca",
+        recommendedUsertatus: "Segue você"
+    },
+    {
+        hrefRecommendedUserIcon: "https://github.com/lemoscaio/projeto7-instagram-react",
+        srcRecommendedUserIcon: "recommended-user-3.jpg",
+        recommendedUserName: "nina",
+        recommendedUsertatus: "Segue você"
+    },
+    {
+        hrefRecommendedUserIcon: "https://github.com/lemoscaio/projeto7-instagram-react",
+        srcRecommendedUserIcon: "recommended-user-4.jpg",
+        recommendedUserName: "luna",
+        recommendedUsertatus: "Segue você"
+    },
+    {
+        hrefRecommendedUserIcon: "https://github.com/lemoscaio/projeto7-instagram-react",
+        srcRecommendedUserIcon: "recommended-user-5.jpg",
+        recommendedUserName: "driven.education",
+        recommendedUsertatus: "Segue você"
+    },
+]
+
 export default function Sidebar() {
     return (
-        <div class="timeline__coluna-secundaria">
-            <aside class="barra-lateral">
-                <div class="barra-lateral__usuario-principal usuario-principal">
-                    <a href="#" class="link-perfil-icone"><img src="./conteudos/mark-icone.jpg" alt="Ícone do Usuário"
-                        class="usuario-principal__icone-usuario" /></a>
-                    <div class="usuario-principal__nome">
-                        <a href="#" class="link-perfil-1">
-                            <p class="usuario-principal__nome__user">markito2021</p>
-                        </a>
-                        <p class="usuario-principal__nome__nome-real"><small>Mark Lemos</small></p>
-                    </div>
-                </div>
-                <div class="barra-lateral__usuarios-recomendados usuarios-recomendados">
-                    <div class="usuarios-recomendados__linha-topo">
+        <div className="timeline__coluna-secundaria">
+            <aside className="sidebar">
+
+                {<User dataFromSidebar={user} />}
+
+                <div className="sidebar__recommended-users recommended-users">
+
+                    <div className="recommended-users__header-row">
                         <p><small>Sugestões para você</small></p>
-                        <p><a href="#" class="link-perfil-1">Ver tudo</a></p>
-                    </div>
-                    <div class="usuarios-recomendados__conjunto">
-                        <div class="usuarios-recomendados__conjunto_usuario-recomendado usuario-recomendado">
-                            <a href="#" class="link-perfil-icone">
-                                <img src="conteudos/usuario-recomendado-1.jpg" alt="Ícone de Usuário"
-                                    class="usuario-recomendado__icone-usuario" />
-                            </a>
-                            <div class="usuario-recomendado__nome">
-                                <a href="#" class="link-perfil-2">
-                                    <p class="usuario-recomendado__nome__user">loki
-                                    </p>
-                                </a>
-                                <p class="usuario-recomendado__nome__status">Segue você</p>
-                            </div>
-                        </div>
-                        <p class="usuarios-recomendados__botao-seguir">Seguir</p>
-                    </div>
-                    <div class="usuarios-recomendados__conjunto">
-                        <div class="usuarios-recomendados__conjunto_usuario-recomendado usuario-recomendado">
-                            <a href="#" class="link-perfil-icone">
-                                <img src="conteudos/usuario-recomendado-2.jpg" alt="Ícone de Usuário"
-                                    class="usuario-recomendado__icone-usuario" />
-                            </a>
-                            <div class="usuario-recomendado__nome">
-                                <a href="#" class="link-perfil-2">
-                                    <p class="usuario-recomendado__nome__user">pipoca</p>
-                                </a>
-                                <p class="usuario-recomendado__nome__status">Segue você</p>
-                            </div>
-                        </div>
-                        <p class="usuarios-recomendados__botao-seguir">Seguir</p>
-                    </div>
-                    <div class="usuarios-recomendados__conjunto">
-                        <div class="usuarios-recomendados__conjunto_usuario-recomendado usuario-recomendado">
-                            <a href="#" class="link-perfil-icone">
-                                <img src="conteudos/usuario-recomendado-3.jpg" alt="Ícone de Usuário"
-                                    class="usuario-recomendado__icone-usuario" />
-                            </a>
-                            <div class="usuario-recomendado__nome">
-                                <a href="#" class="link-perfil-2">
-                                    <p class="usuario-recomendado__nome__user">nina</p>
-                                </a>
-                                <p class="usuario-recomendado__nome__status">Segue você</p>
-                            </div>
-                        </div>
-                        <p class="usuarios-recomendados__botao-seguir">Seguir</p>
-                    </div>
-                    <div class="usuarios-recomendados__conjunto">
-                        <div class="usuarios-recomendados__conjunto_usuario-recomendado usuario-recomendado">
-                            <a href="#" class="link-perfil-icone">
-                                <img src="conteudos/usuario-recomendado-4.jpg" alt=""
-                                    class="usuario-recomendado__icone-usuario" />
-                            </a>
-                            <div class="usuario-recomendado__nome">
-                                <a href="#" class="link-perfil-2">
-                                    <p class="usuario-recomendado__nome__user">luna</p>
-                                </a>
-                                <p class="usuario-recomendado__nome__status">Segue você</p>
-                            </div>
-                        </div>
-                        <p class="usuarios-recomendados__botao-seguir">Seguir</p>
-                    </div>
-                    <div class="usuarios-recomendados__conjunto">
-                        <div class="usuarios-recomendados__conjunto_usuario-recomendado usuario-recomendado">
-                            <a href="#" class="link-perfil-icone">
-                                <img src="conteudos/usuario-recomendado-5.jpg" alt=""
-                                    class="usuario-recomendado__icone-usuario" />
-                            </a>
-                            <div class="usuario-recomendado__nome">
-                                <a href="#" class="link-perfil-2">
-                                    <p class="usuario-recomendado__nome__user">driven.education</p>
-                                </a>
-                                <p class="usuario-recomendado__nome__status">Novo no Instagram</p>
-                            </div>
-                        </div>
-                        <p class="usuarios-recomendados__botao-seguir">Seguir</p>
+                        <p><a href="https://github.com/lemoscaio/projeto7-instagram-react" className="link-profile-1">Ver tudo</a></p>
                     </div>
 
+                    {recommendedUsers.map((recommendedUser) => {
+                        return (
+                            <SidebarRecommendedUsers dataFromSidebar={recommendedUser} />
+                        )
+                    })}
+
                 </div>
-                <div class="barra-lateral__rodape">
-                    <ul class="barra-lateral__rodape__lista lista">
-                        <li class="lista-link"><a href="#" >Sobre</a></li>
-                        <li class=" lista-link"><a href="#">Ajuda</a></li>
-                        <li class="lista-link"><a href="#">Imprensa</a></li>
-                        <li class="lista-link"><a href="#">API</a></li>
-                        <li class="lista-link"><a href="#">Carreiras</a></li>
-                        <li class="lista-link"><a href="#">Privacidade</a></li>
-                        <li class="lista-link"><a href="#">Termos</a></li>
-                        <li class="lista-link"><a href="#">Localizações</a></li>
-                        <li class="lista-link"><a href="#">Contas mais relevantes</a></li>
-                        <li class="lista-link"><a href="#">Hashtags</a></li>
-                        <li class="lista-link"><a href="#">Idiomas</a></li>
+                <div className="sidebar__footer">
+                    <ul className="sidebar__footer__list list">
+                        <li className="list-link"><a href="https://github.com/lemoscaio/projeto7-instagram-react" >Sobre</a></li>
+                        <li className=" list-link"><a href="https://github.com/lemoscaio/projeto7-instagram-react">Ajuda</a></li>
+                        <li className="list-link"><a href="https://github.com/lemoscaio/projeto7-instagram-react">Imprensa</a></li>
+                        <li className="list-link"><a href="https://github.com/lemoscaio/projeto7-instagram-react">API</a></li>
+                        <li className="list-link"><a href="https://github.com/lemoscaio/projeto7-instagram-react">Carreiras</a></li>
+                        <li className="list-link"><a href="https://github.com/lemoscaio/projeto7-instagram-react">Privacidade</a></li>
+                        <li className="list-link"><a href="https://github.com/lemoscaio/projeto7-instagram-react">Termos</a></li>
+                        <li className="list-link"><a href="https://github.com/lemoscaio/projeto7-instagram-react">Localizações</a></li>
+                        <li className="list-link"><a href="https://github.com/lemoscaio/projeto7-instagram-react">Contas mais relevantes</a></li>
+                        <li className="list-link"><a href="https://github.com/lemoscaio/projeto7-instagram-react">Hashtags</a></li>
+                        <li className="list-link"><a href="https://github.com/lemoscaio/projeto7-instagram-react">Idiomas</a></li>
                     </ul>
                     <p>© 2021 INSTAGRAM DO FACEBOOK</p>
                 </div>

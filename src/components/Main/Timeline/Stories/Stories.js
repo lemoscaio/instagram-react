@@ -2,51 +2,51 @@ import Story from "./Story"
 
 let stories = [
     {
-        link: "#",
-        image: "mark-icone.jpg",
+        link: "https://github.com/lemoscaio/projeto7-instagram-react",
+        image: "mark-icon.jpg",
         name: "Você"
     },
     {
-        link: "#",
-        image: "bowie-icone.jpg",
+        link: "https://github.com/lemoscaio/projeto7-instagram-react",
+        image: "bowie-icon.jpg",
         name: "bowie.collie"
     },
     {
-        link: "#",
-        image: "caio-icone.jpg",
+        link: "https://github.com/lemoscaio/projeto7-instagram-react",
+        image: "caio-icon.jpg",
         name: "lemos_caio"
     },
     {
-        link: "#",
-        image: "dandalob-icone.jpg",
+        link: "https://github.com/lemoscaio/projeto7-instagram-react",
+        image: "dandalob-icon.jpg",
         name: "dandalob"
     },
     {
-        link: "#",
-        image: "casimiro-icone.jpg",
+        link: "https://github.com/lemoscaio/projeto7-instagram-react",
+        image: "casimiro-icon.jpg",
         name: "casimiro"
     },
     {
-        link: "#",
-        image: "meltedvideos-icone.jpg",
+        link: "https://github.com/lemoscaio/projeto7-instagram-react",
+        image: "meltedvideos-icon.jpg",
         name: "meltedvideos"
     },
     {
-        link: "#",
-        image: "alanzoka-icone.jpg",
+        link: "https://github.com/lemoscaio/projeto7-instagram-react",
+        image: "alanzoka-icon.jpg",
         name: "alanzoka"
     },
     {
-        link: "#",
-        image: "salsichinhasbr-icone.jpg",
+        link: "https://github.com/lemoscaio/projeto7-instagram-react",
+        image: "salsichinhasbr-icon.jpg",
         name: "salsichinhasbr"
     }
 ]
 
 export default function Stories() {
     return (
-        <section class="stories">
-            <div class="stories__seta-frente botao">
+        <section className="stories">
+            <div className="stories__arrow-right button">
                 <ion-icon name="chevron-forward-circle"></ion-icon>
             </div>
             {stories.map((story) => {
@@ -55,7 +55,7 @@ export default function Stories() {
                         href={story.link}
                         src={story.image}
                         alt={story.name}
-                        nomeUsuario={story.name}
+                        nameuser={story.name}
                     />)
             })}
         </section>)

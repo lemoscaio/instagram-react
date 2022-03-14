@@ -1,32 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
-// Cores
+// Colors
 
-$cor-de-fundo-principal: #e5e5e5;
-$cor-de-fundo-secundaria: #ffffff;
-$cor-de-borda: #dbdbdb;
-$cor-fonte-padrao: black;
-$cor-fonte-clara: #8e8e8e;
-$cor-fonte-maisclara: #c7c7c7;
-$cor-botao-seguir: #139ef2;
-$cor-caixa-pesquisa: #fafafa;
-$cor-botao-publicar: #b2dffc;
-$cor-botao-publicar--hover: #0095f6;
+$background-color-main: #e5e5e5;
+$background-color-secondary: #ffffff;
+$border-color: #dbdbdb;
+$default-font-color: black;
+$light-font-color: #8e8e8e;
+$lighter-font-color: #c7c7c7;
+$follow-button-color: #139ef2;
+$search-box-color: #fafafa;
+$publish-button-color: #b2dffc;
+$publish-button-color--hover: #0095f6;
 
-// Fontes
+// Fonts
 
-$fonte-padrao: "Roboto", sans-serif;
+$default-font: "Roboto", sans-serif;
 
-//Tamanho de fontes
+//Font sizes
 
-$fonte-11px: 0.6875rem;
-$fonte-12px: 0.75rem;
-$fonte-14px: 0.875rem;
-$fonte-18px: 1.125rem;
-$fonte-20px: 1.25rem;
-$fonte-24px: 1.5rem;
-$fonte-32px: 2rem;
-$fonte-52px: 3.25rem;
+$font-11px: 0.6875rem;
+$font-12px: 0.75rem;
+$font-14px: 0.875rem;
+$font-18px: 1.125rem;
+$font-20px: 1.25rem;
+$font-24px: 1.5rem;
+$font-32px: 2rem;
+$font-52px: 3.25rem;
 
 //Mixins
 
@@ -48,7 +48,7 @@ $fonte-52px: 3.25rem;
     }
 }
 
-@mixin tamanho-card($card-size) {
+@mixin card-size($card-size) {
     @media screen and (min-width: 620px) {
         width: $card-size;
         margin: 0 auto;
@@ -56,9 +56,9 @@ $fonte-52px: 3.25rem;
     }
 }
 
-@mixin borda-completa-desktop() {
+@mixin border-full-desktop() {
     @media screen and (min-width: 620px) {
-        border: 1px solid $cor-de-borda;
+        border: 1px solid $border-color;
         border-radius: 3px;
     }
 }
@@ -75,29 +75,29 @@ $fonte-52px: 3.25rem;
     }
 }
 
-%borda-padrao-completa {
-    border: 1px solid $cor-de-borda;
+%border-default-full {
+    border: 1px solid $border-color;
 }
-%borda-padrao-top {
-    border-top: 1px solid $cor-de-borda;
+%border-default-top {
+    border-top: 1px solid $border-color;
 }
-%borda-padrao-right {
-    border-right: 1px solid $cor-de-borda;
+%border-default-right {
+    border-right: 1px solid $border-color;
 }
-%borda-padrao-bottom {
-    border-bottom: 1px solid $cor-de-borda;
+%border-default-bottom {
+    border-bottom: 1px solid $border-color;
 }
-%borda-padrao-left {
-    border-left: 1px solid $cor-de-borda;
+%border-default-left {
+    border-left: 1px solid $border-color;
 }
 %tamanho-do-card-935px {
     width: 935px;
 }
 
-// Regras gerais
+// General rules
 
 body {
-    font-family: $fonte-padrao;
+    font-family: $default-font;
 }
 
 body:empty {
@@ -105,20 +105,19 @@ body:empty {
 }
 
 ion-icon {
-    color: $cor-fonte-padrao;
+    color: $default-font-color;
     vertical-align: middle;
 }
 
 a {
     text-decoration: none;
-    // color: inherit;
 
     &:visited {
-        color: $cor-fonte-padrao;
+        color: $default-font-color;
     }
 }
 small {
-    color: $cor-fonte-clara;
+    color: $light-font-color;
 }
 
 strong {
@@ -129,17 +128,17 @@ main {
     padding-top: 54px;
 
     @include desktop-min-614px() {
-        background-color: $cor-de-fundo-principal;
+        background-color: $background-color-main;
         padding-top: 88px;
         padding-bottom: 34px;
     }
 }
 
-.botao {
+.button {
     cursor: pointer;
 }
 
-.link-perfil-1 {
+.link-profile-1 {
     font-weight: 500;
 
     &:focus {
@@ -147,7 +146,7 @@ main {
     }
 }
 
-.link-perfil-2 {
+.link-profile-2 {
     font-weight: 500;
 
     &:hover {
@@ -160,22 +159,18 @@ main {
 
 // Header
 
-.topo-background {
-    // background-color: green;
-
+.header-background {
     height: 54px;
     position: fixed;
     width: 100%;
-    background-color: $cor-de-fundo-secundaria;
+    background-color: $background-color-secondary;
     z-index: 1;
 }
 
-.topo {
-    // background-color: red
+.header {
+    background-color: $background-color-secondary;
 
-    background-color: $cor-de-fundo-secundaria;
-
-    @extend %borda-padrao-bottom;
+    @extend %border-default-bottom;
 
     height: 54px;
     position: fixed;
@@ -195,20 +190,20 @@ main {
 
     overflow: hidden;
 
-    &__conjunto-desktop {
+    &__desktop-set {
         display: flex;
         flex-direction: row;
 
-        &.middle{
-            @include hide-on-mobile()
+        &.middle {
+            @include hide-on-mobile();
         }
 
-        &__caixa-pesquisa {
+        &__search-box {
             width: 215px;
             padding: 8px;
-            background-color: $cor-caixa-pesquisa;
+            background-color: $search-box-color;
 
-            @include borda-completa-desktop();
+            @include border-full-desktop();
             @include hide-on-mobile();
 
             &:focus {
@@ -224,7 +219,7 @@ main {
         }
     }
 
-    &__conjunto-icones {
+    &__icons-set {
         display: flex;
         flex-direction: row;
 
@@ -233,7 +228,7 @@ main {
         }
     }
 
-    &__icone-botao {
+    &__icon-button {
         font-size: 1.5rem;
         margin: 15px;
 
@@ -252,7 +247,7 @@ main {
     }
 }
 
-// Timeline - Organização
+// Timeline - Positioning
 
 .timeline {
     z-index: -1;
@@ -267,55 +262,53 @@ main {
 // Stories
 
 .stories {
-    // background-color: green;
     height: 121px;
 
-    @extend %borda-padrao-top;
+    @extend %border-default-top;
 
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $cor-de-fundo-principal;
+    background-color: $background-color-main;
 
     overflow: hidden;
 
     padding: 0 15px;
 
-    @include tamanho-card(614px);
+    @include card-size(614px);
 
     @include desktop-min-614px() {
-        background-color: $cor-de-fundo-secundaria;
+        background-color: $background-color-secondary;
         margin-bottom: 24px;
     }
 
-    @include borda-completa-desktop();
+    @include border-full-desktop();
 
-    &__seta-frente {
+    &__arrow-right {
         position: absolute;
         right: 10px;
 
         filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
 
         ion-icon {
-            font-size: $fonte-32px;
-            color: $cor-de-fundo-secundaria;
+            font-size: $font-32px;
+            color: $background-color-secondary;
         }
 
         @include hide-on-mobile();
     }
 
     .story {
-        // background-color: blue;
         margin: 8px;
 
         display: flex;
         align-items: center;
         flex-direction: column;
 
-        &__icone-usuario {
-            &__imagem {
-                background-image: url("../imagens/borda-stories.svg");
+        &__user-icon {
+            &__image {
+                background-image: url("../images/story-border.svg");
                 background-size: cover;
                 background-position: center;
 
@@ -327,36 +320,35 @@ main {
                 padding: 4px;
             }
 
-            &__nome-usuario {
+            &__user-name {
                 text-align: center;
-                font-size: $fonte-12px;
+                font-size: $font-12px;
             }
         }
     }
 }
 
-// Barra lateral - Sidebar
+// Sidebar
 
-.barra-lateral {
+.sidebar {
     margin-left: 30px;
     position: sticky;
 
     top: 88px;
 
-    // background-color: green;
     max-width: 300px;
 
     @include phone-max-935px() {
         display: none;
     }
 
-    .usuario-principal {
+    .main-user {
         display: flex;
         align-items: center;
 
         padding: 30px 0;
 
-        &__icone-usuario {
+        &__user-icon {
             width: 56px;
             height: 56px;
             object-fit: cover;
@@ -365,35 +357,35 @@ main {
             margin-right: 15px;
         }
 
-        &__nome {
+        &__name {
             &__user {
                 padding-bottom: 5px;
             }
         }
     }
 
-    .usuarios-recomendados {
-        font-size: $fonte-14px;
+    .recommended-users {
+        font-size: $font-14px;
 
-        &__linha-topo {
+        &__header-row {
             display: flex;
             justify-content: space-between;
             margin-bottom: 15px;
         }
 
-        &__conjunto {
+        &__set {
             display: flex;
             justify-content: space-between;
             align-items: center;
 
-            .usuario-recomendado {
+            .recommended-user {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
 
                 padding: 7px 0;
 
-                &__icone-usuario {
+                &__user-icon {
                     width: 32px;
                     height: 32px;
                     object-fit: cover;
@@ -401,33 +393,33 @@ main {
                     margin-right: 11px;
                 }
 
-                &__nome {
+                &__name {
                     &__user {
-                        font-size: $fonte-14px;
+                        font-size: $font-14px;
                         padding-bottom: 5px;
                     }
 
                     &__status {
-                        font-size: $fonte-12px;
-                        color: $cor-fonte-clara;
+                        font-size: $font-12px;
+                        color: $light-font-color;
                     }
                 }
             }
         }
+
+        &__follow-button {
+            color: $follow-button-color;
+            cursor: pointer;
+        }
     }
 
-    &__botao-seguir {
-        color: $cor-botao-seguir;
-        cursor: pointer;
-    }
-
-    &__rodape {
-        font-size: $fonte-11px;
-        color: $cor-fonte-maisclara;
+    &__footer {
+        font-size: $font-11px;
+        color: $lighter-font-color;
 
         margin-bottom: 10px;
 
-        &__lista {
+        &__list {
             list-style-type: none;
 
             list-style-position: inside;
@@ -438,14 +430,14 @@ main {
 
             margin: 30px 0 18px 0;
 
-            .lista-link {
+            .list-link {
                 margin-right: 4px;
 
                 &::after {
                     content: " •";
                 }
                 a {
-                    color: $cor-fonte-maisclara;
+                    color: $lighter-font-color;
                     &:visited {
                         color: inherit;
                     }
@@ -458,33 +450,30 @@ main {
 // Timeline - Posts
 
 .posts {
-    // background-color: tomato
-    background-color: $cor-de-fundo-principal;
+    background-color: $background-color-main;
 
-    @include tamanho-card(614px);
+    @include card-size(614px);
 
     .post {
         margin-bottom: 60px;
 
-        border-top: 1px solid $cor-de-borda;
-        border-bottom: 1px solid $cor-de-borda;
-        background-color: $cor-de-fundo-secundaria;
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+        background-color: $background-color-secondary;
 
-        @include borda-completa-desktop();
+        @include border-full-desktop();
 
         &__header {
-            // background-color: orange;
-
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin: 15px;
 
-            &__usuario {
+            &__user {
                 display: flex;
                 align-items: center;
 
-                &__icone-usuario {
+                &__user-icon {
                     width: 40px;
                     height: 40px;
                     object-fit: cover;
@@ -492,15 +481,15 @@ main {
                     margin-right: 15px;
                 }
 
-                &__nome-usuario {
-                    font-size: $fonte-14px;
+                &__user-name {
+                    font-size: $font-14px;
                     font-weight: 500;
                 }
             }
         }
 
-        &__conteudo {
-            &__imagem {
+        &__content {
+            &__image {
                 display: block;
                 width: 100%;
                 aspect-ratio: auto 4 / 5;
@@ -510,7 +499,6 @@ main {
             &__video {
                 display: block;
                 width: 100%;
-                // max-width: 100%;
                 aspect-ratio: 4 / 5;
                 object-fit: cover;
             }
@@ -523,7 +511,7 @@ main {
 
             margin: 10px;
 
-            &__icone-botao {
+            &__icon-button {
                 font-size: 1.5rem;
 
                 ion-icon {
@@ -538,7 +526,7 @@ main {
 
             margin: 0 15px 13px 15px;
 
-            &__icone-usuario {
+            &__user-icon {
                 width: 20px;
                 height: 20px;
                 object-fit: cover;
@@ -547,24 +535,24 @@ main {
             }
 
             p {
-                font-size: $fonte-14px;
+                font-size: $font-14px;
             }
         }
 
-        &__comentarios {
+        &__comments {
             margin: 0 15px;
-            font-size: $fonte-14px;
+            font-size: $font-14px;
 
-            &__adicionar-comentario {
+            &__add-comment {
                 margin: 15px 0 5px 0;
                 padding: 0 15px;
 
                 ion-icon {
-                    font-size: $fonte-24px;
+                    font-size: $font-24px;
                     cursor: pointer;
                 }
 
-                @extend %borda-padrao-top;
+                @extend %border-default-top;
                 display: flex;
                 justify-content: space-between;
                 padding-top: 5px;
@@ -578,29 +566,29 @@ main {
                     padding: 10px;
 
                     &::placeholder {
-                        color: $cor-fonte-clara;
+                        color: $light-font-color;
                     }
                 }
 
-                &__botao {
-                    color: $cor-botao-publicar;
+                &__button {
+                    color: $publish-button-color;
                     cursor: pointer;
                     transition: 300ms;
-                    font-size: $fonte-14px;
+                    font-size: $font-14px;
 
                     &:hover {
-                        color: $cor-botao-publicar--hover;
+                        color: $publish-button-color--hover;
                     }
                 }
             }
 
-            .comentario {
+            .comment {
                 display: flex;
                 justify-content: space-between;
 
                 padding-top: 7px;
 
-                &__conjunto {
+                &__set {
                     display: flex;
                 }
 
@@ -608,7 +596,7 @@ main {
                     padding-right: 5px;
                 }
 
-                &__texto {
+                &__text {
                     padding-right: 5px;
                 }
 
@@ -621,14 +609,13 @@ main {
     }
 }
 
-// Barra inferior
+// Footer - Mobile
 
-.barra-inferior {
-    // background-color: blue;
-    background-color: $cor-de-fundo-secundaria;
+.bottom-nav {
+    background-color: $background-color-secondary;
     height: 54px;
 
-    @extend %borda-padrao-top, %borda-padrao-left, %borda-padrao-right;
+    @extend %border-default-top, %border-default-left, %border-default-right;
 
     display: flex;
     justify-content: space-between;
@@ -639,7 +626,7 @@ main {
     left: 0;
     right: 0;
 
-    &__icones {
+    &__icons {
         font-size: 1.5rem;
         margin: 17px;
     }

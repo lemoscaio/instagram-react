@@ -1,13 +1,13 @@
 export default function PostMenu() {
     return (
-        <div class="post__menu">
-                <div class="post__menu__icone-botao">
-                    <ion-icon class="botao" name="heart-outline"></ion-icon>
-                    <ion-icon class="botao" name="chatbubble-outline"></ion-icon>
-                    <ion-icon class="botao" name="paper-plane-outline"></ion-icon>
+        <div className="post__menu">
+                <div className="post__menu__icon-button">
+                    <ion-icon className="button" name="heart-outline"></ion-icon>
+                    <ion-icon className="button" name="chatbubble-outline"></ion-icon>
+                    <ion-icon className="button" name="paper-plane-outline"></ion-icon>
                 </div>
-                <div class="post__menu__icone-botao">
-                    <ion-icon class="botao" name="bookmark-outline"></ion-icon>
+                <div className="post__menu__icon-button">
+                    <ion-icon className="button" name="bookmark-outline"></ion-icon>
                 </div>
             </div>
     )
