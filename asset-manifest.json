@@ -1,21 +1,14 @@
 {
   "files": {
-    "main.css": "/projeto7-instagram-react/static/css/main.5dd09b76.chunk.css",
-    "main.js": "/projeto7-instagram-react/static/js/main.8dc6eddc.chunk.js",
-    "main.js.map": "/projeto7-instagram-react/static/js/main.8dc6eddc.chunk.js.map",
-    "runtime-main.js": "/projeto7-instagram-react/static/js/runtime-main.7c94ce4d.js",
-    "runtime-main.js.map": "/projeto7-instagram-react/static/js/runtime-main.7c94ce4d.js.map",
-    "static/js/2.23b8d664.chunk.js": "/projeto7-instagram-react/static/js/2.23b8d664.chunk.js",
-    "static/js/2.23b8d664.chunk.js.map": "/projeto7-instagram-react/static/js/2.23b8d664.chunk.js.map",
+    "main.css": "/projeto7-instagram-react/static/css/main.dc7b0962.css",
+    "main.js": "/projeto7-instagram-react/static/js/main.23ee92a2.js",
+    "static/media/story-border.svg": "/projeto7-instagram-react/static/media/story-border.e3ae503f0c77e8cabcd5.svg",
     "index.html": "/projeto7-instagram-react/index.html",
-    "static/css/main.5dd09b76.chunk.css.map": "/projeto7-instagram-react/static/css/main.5dd09b76.chunk.css.map",
-    "static/js/2.23b8d664.chunk.js.LICENSE.txt": "/projeto7-instagram-react/static/js/2.23b8d664.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "/projeto7-instagram-react/static/media/borda-stories.e3ae503f.svg"
+    "main.dc7b0962.css.map": "/projeto7-instagram-react/static/css/main.dc7b0962.css.map",
+    "main.23ee92a2.js.map": "/projeto7-instagram-react/static/js/main.23ee92a2.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.7c94ce4d.js",
-    "static/js/2.23b8d664.chunk.js",
-    "static/css/main.5dd09b76.chunk.css",
-    "static/js/main.8dc6eddc.chunk.js"
+    "static/css/main.dc7b0962.css",
+    "static/js/main.23ee92a2.js"
   ]
 }
