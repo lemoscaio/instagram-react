@@ -55,7 +55,7 @@ export default function Stories() {
                         href={story.link}
                         src={story.image}
                         alt={story.name}
-                        nameuser={story.name}
+                        nameUser={story.name}
                     />)
             })}
         </section>)

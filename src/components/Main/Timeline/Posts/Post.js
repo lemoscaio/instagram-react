@@ -4,15 +4,15 @@ import PostHeader from "./PostHeader";
 import PostInfo from "./PostInfo";
 import PostMenu from "./PostMenu";
 
-export default function Post(post) {
+export default function Post({ dataFromPosts }) {
     return (
         <article className="post">
 
-            <PostHeader dataFromPost={post} />
-            <PostContent dataFromPost={post} />
+            <PostHeader dataFromPost={dataFromPosts} />
+            <PostContent dataFromPost={dataFromPosts} />
             <PostMenu />
-            <PostInfo dataFromPost={post} />
-            <PostComments dataFromPost={post} />
+            <PostInfo dataFromPost={dataFromPosts} />
+            <PostComments dataFromPost={dataFromPosts} />
 
         </article>
     )

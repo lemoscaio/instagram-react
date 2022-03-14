@@ -1,5 +1,5 @@
 export default function Story(props) {
-    let { href, src, alt, nameuser } = props
+    let { href, src, alt, nameUser } = props
     return (
         <a href={href} className="link">
             <div className="story">
@@ -8,7 +8,7 @@ export default function Story(props) {
                         alt={"Ícone: " + alt} />
                 </div>
                 <p className="story__user-name">
-                    {nameuser}
+                    {nameUser}
                 </p>
             </div>
         </a>

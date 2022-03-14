@@ -1,15 +1,14 @@
-export default function PostHeader(post) {
-
+export default function PostHeader({ dataFromPost: { userInfo } }) {
     return (
         <div className="post__header">
             <div className="post__header__user">
-                <a href={post.dataFromPost.dataFromPosts.hrefuser} className="link-profile-icone">
-                    <img className="post__header__user__user-icon" src={"./images/icons/" + post.dataFromPost.dataFromPosts.srcuser}
-                        alt={"Ícone: " + post.dataFromPost.dataFromPosts.nameuser} />
+                <a href={userInfo.hrefUser} className="link-profile-icone">
+                    <img className="post__header__user__user-icon" src={"./images/icons/" + userInfo.srcUser}
+                        alt={"Ícone: " + userInfo.nameUser} />
                 </a>
-                <a href={post.dataFromPost.dataFromPosts.hrefuser} className="link-profile-1">
+                <a href={userInfo.hrefUser} className="link-profile-1">
                     <p className="post__header__user__user-name">
-                        {post.dataFromPost.dataFromPosts.nameuser}
+                        {userInfo.nameUser}
                     </p>
                 </a>
             </div>

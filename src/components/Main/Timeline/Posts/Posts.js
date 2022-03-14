@@ -1,133 +1,136 @@
 import Post from "./Post"
 
-// let posts = [
-//     {
-//         userPostador: {
-//             nameuser: "Mark",
-//             srcuser: "mark-icon.jpg",
-//             hrefuser: "https://github.com/lemoscaio/projeto7-instagram-react",
-//             srccontent: "mark-post.jpg"
-//         },
-//         curtidas: {
-//             hrefCurtidoPor: "https://github.com/lemoscaio/projeto7-instagram-react",
-//             curtidoPor: "dandalob",
-//             hrefCurtidas: "https://github.com/lemoscaio/projeto7-instagram-react",
-//             qtdCurtidas: "101.523"
-//         },
-//         comments: {
-//             qtdcomments: "999",
-//             comments: [
-//                 {
-//                     commentuser: "lemoscaio",
-//                     commentcontent: "Lindo do papai"
-//                 },
-//                 {
-//                     commentuser: "dandalob",
-//                     commentcontent: "Lindo da mamãe"
-//                 }
-//             ]
-//         }
-//     }
-// ]
-
 let posts = [
     {
-        nameuser: "Mark",
-        srcuser: "mark-icon.jpg",
-        hrefuser: "https://github.com/lemoscaio/projeto7-instagram-react",
-        srccontent: "mark-post.jpg",
-        contentType: "image",
-        hrefCurtidoPor: "https://github.com/lemoscaio/projeto7-instagram-react",
-        srcCurtidoPor: "dandalob-icon.jpg",
-        curtidoPor: "dandalob",
-        hrefCurtidas: "https://github.com/lemoscaio/projeto7-instagram-react",
-        qtdCurtidas: "101.523",
-        qtdcomments: "1.778",
-        comments: [
-            {
-                hrefcommentuser: "https://github.com/lemoscaio/projeto7-instagram-react",
-                commentuser: "lemoscaio",
-                commentcontent: "Lindo do papai"
-            },
-            {
-                hrefcommentuser: "https://github.com/lemoscaio/projeto7-instagram-react",
-                commentuser: "dandalob",
-                commentcontent: "Lindo da mamãe"
-            }
-        ]
+        userInfo: {
+            nameUser: "Mark",
+            srcUser: "mark-icon.jpg",
+            hrefUser: "https://github.com/lemoscaio/projeto7-instagram-react",
+        },
+        contentInfo: {
+            srcContent: "mark-post.jpg",
+            contentType: "image"
+        },
+        postInfo: {
+            hrefLikedBy: "https://github.com/lemoscaio/projeto7-instagram-react",
+            srcLikedBy: "dandalob-icon.jpg",
+            likedBy: "dandalob",
+            hrefLikes: "https://github.com/lemoscaio/projeto7-instagram-react",
+            amountLikes: 101.523,
+        },
+        commentsInfo: {
+            amountComments: 1.778,
+            comments: [
+                {
+                    hrefcommentUser: "https://github.com/lemoscaio/projeto7-instagram-react",
+                    commentUser: "lemoscaio",
+                    commentContent: "Lindo do papai"
+                },
+                {
+                    hrefcommentUser: "https://github.com/lemoscaio/projeto7-instagram-react",
+                    commentUser: "dandalob",
+                    commentContent: "Lindo da mamãe"
+                }
+            ]
+        }
     },
     {
-        nameuser: "Mark",
-        srcuser: "mark-icon.jpg",
-        hrefuser: "https://github.com/lemoscaio/projeto7-instagram-react",
-        srccontent: "mark-video",
-        contentType: "video",
-        hrefCurtidoPor: "https://github.com/lemoscaio/projeto7-instagram-react",
-        srcCurtidoPor: "dandalob-icon.jpg",
-        curtidoPor: "dandalob",
-        hrefCurtidas: "https://github.com/lemoscaio/projeto7-instagram-react",
-        qtdCurtidas: "101.523",
-        qtdcomments: "1.778",
-        comments: [
-            {
-                hrefcommentuser: "https://github.com/lemoscaio/projeto7-instagram-react",
-                commentuser: "lemoscaio",
-                commentcontent: "Lindo do papai"
-            },
-            {
-                hrefcommentuser: "https://github.com/lemoscaio/projeto7-instagram-react",
-                commentuser: "dandalob",
-                commentcontent: "Lindo da mamãe"
-            }
-        ]
+        userInfo: {
+            nameUser: "Mark",
+            srcUser: "mark-icon.jpg",
+            hrefUser: "https://github.com/lemoscaio/projeto7-instagram-react",
+        },
+        contentInfo: {
+            srcContent: "mark-video",
+            contentType: "video"
+        },
+        postInfo: {
+            hrefLikedBy: "https://github.com/lemoscaio/projeto7-instagram-react",
+            srcLikedBy: "dandalob-icon.jpg",
+            likedBy: "dandalob",
+            hrefLikes: "https://github.com/lemoscaio/projeto7-instagram-react",
+            amountLikes: 101.523,
+        },
+        commentsInfo: {
+            amountComments: 0,
+            comments: [
+            ]
+        }
     },
     {
-        nameuser: "casimiro",
-        srcuser: "casimiro-icon.jpg",
-        hrefuser: "https://github.com/lemoscaio/projeto7-instagram-react",
-        srccontent: "casimiro-post.jpg",
-        contentType: "image",
-        hrefCurtidoPor: "https://github.com/lemoscaio/projeto7-instagram-react",
-        srcCurtidoPor: "lemoscaio-icon.jpg",
-        curtidoPor: "lemoscaio",
-        hrefCurtidas: "https://github.com/lemoscaio/projeto7-instagram-react",
-        qtdCurtidas: "199.954",
-        comments: [
-        ]
+        userInfo: {
+            nameUser: "casimiro",
+            srcUser: "casimiro-icon.jpg",
+            hrefUser: "https://github.com/lemoscaio/projeto7-instagram-react",
+        },
+        contentInfo: {
+            srcContent: "casimiro-post.jpg",
+            contentType: "image"
+        },
+        postInfo: {
+            hrefLikedBy: "https://github.com/lemoscaio/projeto7-instagram-react",
+            srcLikedBy: "lemoscaio-icon.jpg",
+            likedBy: "lemoscaio",
+            hrefLikes: "https://github.com/lemoscaio/projeto7-instagram-react",
+            amountLikes: 199.954,
+        },
+        commentsInfo: {
+            amountComments: 0,
+            comments: [
+            ]
+        }
     },
     {
-        nameuser: "meltedvideos",
-        srcuser: "meltedvideos-icon.jpg",
-        hrefuser: "https://github.com/lemoscaio/projeto7-instagram-react",
-        srccontent: "meltedvideos-post.jpg",
-        contentType: "image",
-        hrefCurtidoPor: "https://github.com/lemoscaio/projeto7-instagram-react",
-        srcCurtidoPor: "dandalob-icon.jpg",
-        curtidoPor: "dandalob",
-        hrefCurtidas: "https://github.com/lemoscaio/projeto7-instagram-react",
-        qtdCurtidas: "103.974",
-        comments: [
-        ]
+        userInfo: {
+            nameUser: "meltedvideos",
+            srcUser: "meltedvideos-icon.jpg",
+            hrefUser: "https://github.com/lemoscaio/projeto7-instagram-react",
+        },
+        contentInfo: {
+            srcContent: "meltedvideos-post.jpg",
+            contentType: "image"
+        },
+        postInfo: {
+            hrefLikedBy: "https://github.com/lemoscaio/projeto7-instagram-react",
+            srcLikedBy: "dandalob-icon.jpg",
+            likedBy: "dandalob",
+            hrefLikes: "https://github.com/lemoscaio/projeto7-instagram-react",
+            amountLikes: 103.974,
+        },
+        commentsInfo: {
+            amountComments: 0,
+            comments: [
+            ]
+        }
     },
     {
-        nameuser: "thedreamsetup",
-        srcuser: "thedreamsetup-icon.jpg",
-        hrefuser: "https://github.com/lemoscaio/projeto7-instagram-react",
-        srccontent: "thedreamsetup-post.jpg",
-        contentType: "image",
-        hrefCurtidoPor: "https://github.com/lemoscaio/projeto7-instagram-react",
-        srcCurtidoPor: "lemoscaio-icon.jpg",
-        curtidoPor: "lemoscaio",
-        hrefCurtidas: "https://github.com/lemoscaio/projeto7-instagram-react",
-        qtdCurtidas: "1.903",
-        comments: [
-        ]
-    }
+        userInfo: {
+            nameUser: "thedreamsetup",
+            srcUser: "thedreamsetup-icon.jpg",
+            hrefUser: "https://github.com/lemoscaio/projeto7-instagram-react",
+        },
+        contentInfo: {
+            srcContent: "thedreamsetup-post.jpg",
+            contentType: "image"
+        },
+        postInfo: {
+            hrefLikedBy: "https://github.com/lemoscaio/projeto7-instagram-react",
+            srcLikedBy: "lemoscaio-icon.jpg",
+            likedBy: "lemoscaio",
+            hrefLikes: "https://github.com/lemoscaio/projeto7-instagram-react",
+            amountLikes: 1.903,
+        },
+        commentsInfo: {
+            amountComments: 0,
+            comments: [
+            ]
+        }
+    },
 ]
 
 export default function Posts() {
     return (
-        // Timeline com posts
+        // Timeline - Posts
         <section className="posts">
             {posts.map((post) => {
                 return (

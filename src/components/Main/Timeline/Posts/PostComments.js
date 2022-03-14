@@ -1,20 +1,20 @@
 import PostComment from "./PostComment"
 
-export default function PostComments(post) {
+export default function PostComments({ dataFromPost: { commentsInfo } }) {
     return (
         <div className="post__secao-comments">
             <div className="post__comments comments">
                 <a href="https://github.com/lemoscaio/projeto7-instagram-react" className="link-profile-1">
-                    {post.dataFromPost.dataFromPosts.comments.length > 0 &&
+                    {commentsInfo.comments.length > 0 &&
                         <p><small>
-                            Ver todos os {post.dataFromPost.dataFromPosts.qtdcomments} comentários
+                            Ver todos os {commentsInfo.amountComments} comentários
                         </small></p>}
                 </a>
 
-                {post.dataFromPost.dataFromPosts.comments.map((comment) => {
+                {commentsInfo.comments.map((comment) => {
                     return (<PostComment
-                        hrefcommentuser={comment.hrefcommentuser}
-                        commentuser={comment.commentuser} commentcontent={comment.commentcontent}
+                        hrefcommentUser={comment.hrefcommentUser}
+                        commentUser={comment.commentUser} commentContent={comment.commentContent}
                     />)
                 })}
 

@@ -1,13 +1,13 @@
 export default function PostComment(props) {
-    let { hrefcommentuser, commentuser, commentcontent } = props
+    let { hrefcommentUser, commentUser, commentContent } = props
     return (
         <div className="comments__comment comment">
 
             <div className="comment__set">
-                <a href={hrefcommentuser} className="link-profile-2">
-                    <p className="comment__user">{commentuser}</p>
+                <a href={hrefcommentUser} className="link-profile-2">
+                    <p className="comment__user">{commentUser}</p>
                 </a>
-                <p className="comment__text">{commentcontent}</p>
+                <p className="comment__text">{commentContent}</p>
             </div>
 
             <div className="comment__like button">
