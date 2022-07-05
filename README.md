@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+<div align="center"><img style = "width:100%;"src="https://i.imgur.com/FpaWt0J.png"></img></div>
+<hr>
+<h2 align=center>Instagram Mock Website</h2>
+<h3 align=center>Web development Project</h3>
+<hr>
+<h4>A mock website of the original <a href="[http://](https://www.instagram.com/)" target="_blank" rel="noopener noreferrer">instagram.com</a>, made with React.JS. This was the seventh project of the Driven full stack web development bootcamp and the first to use React.JS.</h4>
+<h4>Since this was the first project to use React.JS, the goal was to simply recreate the second project of the Bootcamp, but using only React.JS instead of HTML and CSS. This is <b>not a working site</b>.</h4>
+<br>
+<div align=center style="display:flex; justify-content: center; gap:5%">
+    <img style = "height:200px;"src="https://i.imgur.com/RGUKmDS.png">
+    <img style = "height:200px;"src="https://i.imgur.com/qGm4Xb1.png">
+</div>
+<br><hr>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
 
-## Available Scripts
+- Responsive layout
+- Fixed header
+- Sticky sidebar
+- Video with autoplay as in the original (muted)
 
-In the project directory, you can run:
+## Requirements
 
-### `npm start`
+ - Layout
+    - [x]  Follow the provided figma desktop layout
+    - [x]  Follow the provided figma mobile layout
+    - [x]  The layout without a sidebar must be activated when the screen width is below 935px
+    - [x]  The mobile layout must be activated when the screen width is below 614px
+    - [x]  The sidebar must be fixed on a specific position
+- Icons
+    - [x]  Use the Ionicons icon library: [https://ionicons.com/](https://ionicons.com/)
+- Stories
+    - [x]  In the stories container, there must be sufficient items to fill the width, but the overflowed icons must be hidden
+    - [x]  On the desktop mode, there must be an arrow on the right side of the stories container
+    - [x]  The arrow doesn't need to work (since it's only a HTML and SCSS project)
+    - [x]   There can't be a visible horizontal scroll
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Bonus
+  - Video
+    - [x]  At least one of the posts must be a video
+    - [x]  There's no need for a play button
+    - [x]  The video must be on the formats .mp4 or .ogg, so it can work in any browser
+    - [x]  The video must be played automatically
+    
+  - Comments
+    - [x]  There must have comments on the posts, with a like button on each comment
+    - [x]  There must have an input for a new comment using the `input` tag and a publish button
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Built with
 
-### `npm test`
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Contact
 
-### `npm run build`
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=blue
+[linkedin-url]: https://www.linkedin.com/in/caiodeoliveiralemos/
